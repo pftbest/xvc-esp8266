@@ -31,3 +31,6 @@ UART, TCP port 2544
 |-|-|
 |TX0 (GPIO1)|TX|
 |RX0 (GPIO3)|RX|
+
+## Note:
+Don't use GPIO pin 16. It's controlled by a different register and it's very slow to toggle, at least 2x slower than other GPIO pins.
