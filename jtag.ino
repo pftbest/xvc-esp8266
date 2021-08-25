@@ -220,6 +220,7 @@ public:
   void begin()
   {
     Serial.begin(115200);
+    Serial.setRxBufferSize(2048);
     server.begin();
   }
 
